@@ -1,0 +1,33 @@
+<EntityDescriptor xmlns="urn:oasis:names:tc:SAML:2.0:metadata" entityID="https://localhost:3000">
+<IDPSSODescriptor xmlns:ds="http://www.w3.org/2000/09/xmldsig#" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+  <KeyDescriptor use="signing">
+    <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+      <ds:X509Data>
+        <ds:X509Certificate>MIIC0DCCAbgCCQCcnC0tqJDrPjANBgkqhkiG9w0BAQsFADAqMQswCQYDVQQGEwJL
+          TzEOMAwGA1UECAwFU0VPVUwxCzAJBgNVBAoMAktPMB4XDTIyMDEyNzE0MTIyMVoX
+          DTIyMDIyNjE0MTIyMVowKjELMAkGA1UEBhMCS08xDjAMBgNVBAgMBVNFT1VMMQsw
+          CQYDVQQKDAJLTzCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBANh9I7Ky
+          mAbpnQn/caAZDGriDTVQdD1vRatAHmRnqGakQTIQbNyEeXWAaE8d56NeUacnbBcC
+          QusvSnjKsGIsI2Bj0a0KMQxhROBaXQLY1htT7vhNJnHczvtvZzjyhFkSF425QYQ4
+          POvfMEbIDAr3VFtp2vfmz+Wfa+qr6MFB8pkwB5uHIKwQDG6X7doasuV4C4lO0UYV
+          HpTSSGmSll+CXJe4eiS/dmg6s1i2CxkYoVXv/oGXllKzcXIT1fhS0/L7o/ADiKG9
+          Qe3ukZ9OTmEFvhExv8TsSO8fChaZEnWvbYN92MBjoz3ieMqKHdaE5x+RElNXbQNA
+          PLY/xsQJjDrq1F0CAwEAATANBgkqhkiG9w0BAQsFAAOCAQEAkiDtuIL4wbkvHTKT
+          McSsnnIBvLSurOkuuYD0cYUQRnUJgi+5ETleY9j9tAar85tBvXA+TqwUhnvuDX0Q
+          pTFkaqxcPT1LyDWuN5hznJEIdfmhx9MXHvBe/BYqwcCqy1BSiVIgdUQmKJlaCqKr
+          XGdQQ2Ts/A8pleGFGsgez0+q3aQcvVJw547B5oS4guYLAJTYTOCsWfBF4Zp449cs
+          i/Vv6Tlg2UDmmijyQS01rCYAnTj/r/cIS/awGXOh3TBWdC69C7HCpRDhcM5NgrRU
+          jSI9kfIaKsbXmFgUs0CNnJf9BJ9Saf9Jyz5HdfY7De2MKuVbC4cHofNC5iyP0LPN
+          p0EakQ==</ds:X509Certificate>
+      </ds:X509Data>
+    </ds:KeyInfo>
+  </KeyDescriptor>
+  <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</NameIDFormat>
+  <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</NameIDFormat>
+  <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:entity</NameIDFormat>
+  <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:kerberos</NameIDFormat>
+  <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="http://localhost:3000/login"/>
+  <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="http://localhost:3000/login"/>
+  <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="http://localhost:3000/login"/>
+</IDPSSODescriptor>
+</EntityDescriptor>
